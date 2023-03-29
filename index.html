@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/tailwindcss">
+        @layer components {
+            .btn {
+                @apply cursor-pointer h-10;
+            }
+
+            .btn-primary {
+                @apply bg-[#FF6B00] text-white rounded-md;
+            }
+
+            .btn-primary:hover {
+                @apply bg-orange-600;
+            }
+        }
+    </style>
+
 
     <link rel="stylesheet" href="css/main.css">
     <title>Landing</title>
@@ -12,11 +29,133 @@
 
 <body>
     <!-- Header -->
-    <header class="lg:red">
-        hello world!
-    </header>
-    <!-- Header -->
+    <header class="header wrapper flex justify-between items-center h-[60px] md:h-[72px]">
+        <!-- Menu icon -->
+        <button class="menu-icon select-none md:hidden">
+            <img src="./images/menu-icon.svg" alt="Menu icon">
+        </button>
 
+        <!-- Mobile navbar -->
+        <nav
+            class="mobile-nav md:hidden fixed right-0 top-0 bg-white z-50 w-full h-full max-w-[450px] p-10 translate-x-full ease-in-out duration-200">
+
+            <button
+                class="close absolute left-[2rem] top-[2rem] text-[1.5rem] text-[#757575] border-[1px] border-[#bbb] w-[4rem] h-[4rem] rounded-full">✕</button>
+
+            <!-- Mobile nav list -->
+            <ul class="nav-list text-3xl flex flex-col gap-8 mt-32 mb-16">
+                <!-- Navbar link -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">الرئيسية</a>
+                </li>
+                <!-- Navbar link -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">خدماتنا</a>
+                </li>
+                <!-- Navbar link -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">أعمالنا</a>
+                </li>
+                <!-- Navbar link -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">تواصل معنا</a>
+                </li>
+            </ul>
+
+            <!-- Mobile nav social links -->
+            <div class="social-links flex items-center gap-6">
+                <a class="youtube w-12 h-12 flex justify-center items-center rounded-full" href="#">
+                    <img class="w-8" src="./images/youtube.svg" alt="">
+                </a>
+                <a class="twitter w-12 h-12 flex justify-center items-center rounded-full" href="#">
+                    <img class="w-8" src="./images/twitter.svg" alt="">
+                </a>
+                <a class="dribble w-12 h-12 flex justify-center items-center rounded-full" href="#">
+                    <img class="w-8" src="./images/dribble.svg" alt="">
+                </a>
+                <a class="instagram w-12 h-12 flex justify-center items-center rounded-full" href="#">
+                    <img class="w-8" src="./images/instagram.svg" alt="">
+                </a>
+            </div>
+        </nav>
+
+        <!-- Navbar -->
+        <nav class="nav hidden md:block">
+            <ul class="nav-list text-[0.875rem] flex gap-4 lg:gap-8 xl:text-base">
+                <!-- Navbar link -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">الرئيسية</a>
+                </li>
+                <!-- Navbar link -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">خدماتنا</a>
+                </li>
+                <!-- Navbar link -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">أعمالنا</a>
+                </li>
+                <!-- Navbar link -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">تواصل معنا</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- logo -->
+        <a href="/" class="logo w-[140px] lg:w-[200px] md:absolute md:left-[50%] md:translate-x-[-50%]">
+            <img src="./images/logo.svg" alt="Logo">
+        </a>
+
+        <!-- social links -->
+        <div class="social-links items-center gap-3 hidden md:flex">
+            <!-- Link -->
+            <a class="youtube w-8 h-8 flex justify-center items-center bg-[#E7E7E8] rounded-full" href="#">
+                <img class="w-4" src="./images/youtube.svg" alt="">
+            </a>
+
+            <!-- Link -->
+            <a class="twitter w-8 h-8 flex justify-center items-center bg-[#E7E7E8] rounded-full" href="#">
+                <img class="w-4" src="./images/twitter.svg" alt="">
+            </a>
+
+            <!-- Link -->
+            <a class="dribble w-8 h-8 flex justify-center items-center bg-[#E7E7E8] rounded-full" href="#">
+                <img class="w-4" src="./images/dribble.svg" alt="">
+            </a>
+
+            <!-- Link -->
+            <a class="instagram w-8 h-8 flex justify-center items-center bg-[#E7E7E8] rounded-full" href="#">
+                <img class="w-4" src="./images/instagram.svg" alt="">
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <main class="hero md:flex md:flex-row-reverse mb-16">
+        <!-- Image -->
+        <div class="hero-image -z-10 mb-10 md:mb-0 md:basis-7/12 md:relative left-0">
+            <img class="w-[90%] md:w-[unset] mr-auto" src="./images/hero/banner.png" alt="">
+        </div>
+
+        <!-- Content -->
+        <div
+            class="hero-content text-center flex flex-col gap-8 md:justify-center md:basis-3/6 relative z-10 px-4 md:pl-0 lg:pr-10 xl:pr-20">
+
+            <!-- title -->
+            <h1 class="text-2xl md:text-3xl text-[var(--primary)] lg:text-4xl xl:text-5xl whitespace-nowrap">تصوير
+                منتجات <span class="text-[var(--secondary)]">الذهب</span>
+                بإحترافية
+            </h1>
+
+            <p class="lg:text-lg xl:text-2xl !leading-loose">خدمات التصوير الإحترافى لمنتجات الذهب الان فى ديجيتال كود
+                فقط أرسل لنا منتجاتك لنصورها بأحدث الطرق والمعدات
+                وبأيدى أفضل الخبراء فى مجال تصوير المنتجات.</p>
+
+            <div class="">
+                <button class="btn btn-primary lg:text-lg w-[200px] lg:w-[240px]">تواصل معنا الان</button>
+            </div>
+        </div>
+    </main>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/main.js"></script>

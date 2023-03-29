@@ -10,8 +10,13 @@
   position: relative;
 }
 
-html {
-  font-size: 10px;
+:root {
+  --primary: #005f86;
+  --secondary: #ff6b00;
+
+  --accent: #323232;
+  --accent-dark: #18191f;
+  --accent-light: #575f6b;
 }
 
 body {
@@ -20,5 +25,106 @@ body {
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
 
-  font-size: 1.6rem;
+  overflow-x: hidden;
+  color: var(--accent);
+}
+
+a {
+  display: inline-block;
+  cursor: pointer;
+}
+
+p {
+  color: var(--accent-light);
+  line-height: 1.6;
+}
+
+/* Helpers */
+.wrapper {
+  width: 92%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* Header */
+.nav-link {
+  color: var(--accent-dark);
+  transition: 150ms ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+  color: var(--secondary);
+}
+
+@media (max-width: 767px) {
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link.active {
+    padding-right: 1rem;
+  }
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  background: #f5f5f5;
+  transform: scale(1.1);
+}
+
+.social-links .twitter:hover,
+.social-links .twitter:focus {
+  background: #1da1f2;
+}
+
+.social-links .twitter:hover img,
+.social-links .twitter:focus img {
+  filter: brightness(0) invert(1);
+}
+
+.social-links .dribble:hover,
+.social-links .dribble:focus {
+  background: #f777a7;
+}
+
+.social-links .dribble:hover img,
+.social-links .dribble:focus img {
+  filter: brightness(0) invert(1);
+}
+
+.social-links .instagram:hover,
+.social-links .instagram:focus {
+  background-image: radial-gradient(
+    circle at 33% 100%,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf
+  );
+}
+
+.social-links .instagram:hover img,
+.social-links .instagram:focus img {
+  filter: brightness(0) invert(1);
+}
+
+/* Hero section */
+.hero {
+  background-image: url("../images/hero/illustration-1.png"),
+    url("../images/hero/illustration-2.png");
+
+  background-repeat: no-repeat;
+  background-position: 95% 0%, 95% 45%;
+  background-size: 100px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: url("../images/hero/illustration-1.png"),
+      url("../images/hero/illustration-2.png"),
+      url("../images/hero/illustration-3.png");
+
+    background-position: 95% 5%, 95% 95%, 50% 100%;
+  }
 }
