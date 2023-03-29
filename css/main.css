@@ -1,6 +1,30 @@
 /* Cairo font */
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;800;900;1000&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply cursor-pointer h-10 ease-in duration-150;
+  }
+
+  .btn-primary {
+    @apply bg-[#FF6B00] text-white rounded-md;
+  }
+
+  .btn-primary:hover {
+    @apply bg-orange-600;
+  }
+}
+
+@layer utilities {
+  .c-span-2 {
+    grid-column: span 2;
+  }
+}
+
 /*================= Reset ==============*/
 *,
 *::after,
@@ -36,7 +60,7 @@ a {
 
 p {
   color: var(--accent-light);
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 /* Helpers */
@@ -44,6 +68,59 @@ p {
   width: 92%;
   max-width: 1240px;
   margin: 0 auto;
+}
+
+.section {
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.title {
+  color: var(--primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.title img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(25%, -45%);
+}
+
+.title + p {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.swiper-pagination-bullet {
+  background: #898989;
+  opacity: unset;
+  margin: 0 !important;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 0.5em;
+}
+
+.swiper-pagination-bullet-active {
+  width: 1rem;
+  background: var(--secondary) !important;
 }
 
 /* Header */
@@ -128,3 +205,5 @@ p {
     background-position: 95% 5%, 95% 95%, 50% 100%;
   }
 }
+
+/* About us */

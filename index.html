@@ -6,24 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style type="text/tailwindcss">
-        @layer components {
-            .btn {
-                @apply cursor-pointer h-10;
-            }
 
-            .btn-primary {
-                @apply bg-[#FF6B00] text-white rounded-md;
-            }
-
-            .btn-primary:hover {
-                @apply bg-orange-600;
-            }
-        }
-    </style>
-
-
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
     <title>Landing</title>
 </head>
 
@@ -142,12 +127,15 @@
             class="hero-content text-center flex flex-col gap-8 md:justify-center md:basis-3/6 relative z-10 px-4 md:pl-0 lg:pr-10 xl:pr-20">
 
             <!-- title -->
-            <h1 class="text-2xl md:text-3xl text-[var(--primary)] lg:text-4xl xl:text-5xl whitespace-nowrap">تصوير
+            <h1
+                class="text-2xl md:text-3xl text-[var(--primary)] lg:text-4xl xl:text-5xl font-semibold whitespace-nowrap">
+                تصوير
                 منتجات <span class="text-[var(--secondary)]">الذهب</span>
                 بإحترافية
             </h1>
 
-            <p class="lg:text-lg xl:text-2xl !leading-loose">خدمات التصوير الإحترافى لمنتجات الذهب الان فى ديجيتال كود
+            <p class="lg:text-lg xl:text-2xl !leading-loose">خدمات التصوير الإحترافى لمنتجات الذهب الان فى <span
+                    class="text-[var(--secondary)]">ديجيتال كود</span>
                 فقط أرسل لنا منتجاتك لنصورها بأحدث الطرق والمعدات
                 وبأيدى أفضل الخبراء فى مجال تصوير المنتجات.</p>
 
@@ -157,7 +145,104 @@
         </div>
     </main>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- why us section -->
+    <section class="about-us section bg-[#FAFAFA]">
+        <div class="wrapper">
+            <h2 class="title">
+                من نحن
+                <img src="./images/title.svg" alt="">
+            </h2>
+
+            <p class="text-center mb-8">
+                ديجتال كود أفضل منصه عربية لتطوير الأعمال والخدمات, لدينا العديد من الخدمات اللى تهم التاجر وتساعده فى
+                زيادة ارباحه وتطوير اعماله , نحن شركاء التاجر فى النجاح ,
+                نساعد التاجر فى كل ما يخصه فى تطوير عمله وخدمته وإظهارها بشكل أفضل يجذب العملاء إليه عن طريق العديد من
+                الخدمات.
+            </p>
+
+            <div id="about-us-slider" class="swiper">
+                <div class="swiper-wrapper flex items-center">
+                    <!-- Slide -->
+                    <div class="swiper-slide flex items-center justify-center">
+                        <img src="./images/about-us/1.png" alt="">
+                    </div>
+                    <!-- Slide -->
+                    <div class="swiper-slide flex items-center justify-center">
+                        <img src="./images/about-us/2.png" alt="">
+                    </div>
+                    <!-- Slide -->
+                    <div class="swiper-slide flex items-center justify-center">
+                        <img src="./images/about-us/3.png" alt="">
+                    </div>
+                    <!-- Slide -->
+                    <div class="swiper-slide flex items-center justify-center">
+                        <img src="./images/about-us/4.png" alt="">
+                    </div>
+                    <!-- Slide -->
+                    <div class="swiper-slide flex items-center justify-center">
+                        <img src="./images/about-us/5.png" alt="">
+                    </div>
+                    <!-- Slide -->
+                    <div class="swiper-slide flex items-center justify-center">
+                        <img src="./images/about-us/6.png" alt="">
+                    </div>
+                    <!-- Slide -->
+                    <div class="swiper-slide flex items-center justify-center">
+                        <img src="./images/about-us/4.png" alt="">
+                    </div>
+                    <!-- Slide -->
+                    <div class="swiper-slide flex items-center justify-center">
+                        <img src="./images/about-us/8.png" alt="">
+                    </div>
+                </div>
+
+                <div class="about-us-slider-controls slider-controls"></div>
+            </div>
+
+            <div class="about-images hidden grid-cols-6">
+
+                <!-- Slide -->
+                <div class="c-span-2">
+                    <img src="./images/about-us/1.png" alt="">
+                </div>
+                <!-- Slide -->
+                <div class="">
+                    <img src="./images/about-us/2.png" alt="">
+                </div>
+                <!-- Slide -->
+                <div class="">
+                    <img src="./images/about-us/3.png" alt="">
+                </div>
+                <!-- Slide -->
+                <div class="c-span-2">
+                    <img src="./images/about-us/4.png" alt="">
+                </div>
+                <!-- Slide -->
+                <div class="c-span-2">
+                    <img src="./images/about-us/5.png" alt="">
+                </div>
+                <!-- Slide -->
+                <div class="c-span-2">
+                    <img src="./images/about-us/6.png" alt="">
+                </div>
+                <!-- Slide -->
+                <div class="">
+                    <img src="./images/about-us/8.png" alt="">
+                </div>
+                <!-- Slide -->
+                <div class="">
+                    <img src="./images/about-us/3.png" alt="">
+                </div>
+                <!-- Slide -->
+                <div class="">
+                    <img src="./images/about-us/7.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="js/main.js"></script>
 </body>
 
