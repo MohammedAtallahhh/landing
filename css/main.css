@@ -1,0 +1,24 @@
+/* Cairo font */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;800;900;1000&display=swap");
+
+/*================= Reset ==============*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Cairo", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+
+  font-size: 1.6rem;
+}
