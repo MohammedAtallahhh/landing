@@ -456,19 +456,134 @@
         </div>
     </section>
 
-    <!-- 3D photograph -->
-    <section class="section 3d">
-        <div class="wrapper">
+    <!-- 3D photograph section -->
+    <section class="section three-d">
+        <div class="wrapper" style="max-width: 1100px;">
             <h2 class="title">
                 خدمة التصوير ثلاثي الأبعاد
                 <img src="./images/title.svg" alt="">
             </h2>
 
-            <p class="text-center">
+            <p class="mb-8 text-center lg:text-lg">
                 ديجتال كود مميزة بتقديم خدمة التصوير ثلاثى الأبعاد لمنتجاتك
                 <span class="text-[var(--secondary)]">360ْ </span>, التى تظهر كل تفاصيل منتجك بشكل عصرى وجذاب
                 للعملاء , يمكنك رؤية بعض أعمالنا السابقة هنا.
             </p>
+
+            <div id="three-d-slider" class="videos swiper">
+                <div class="swiper-wrapper">
+                    <div class="flex justify-center swiper-slide">
+                        <div>
+                            <video src="./images/video.mp4" class="max-w-[680px]" playsinline autoplay muted
+                                loop></video>
+                        </div>
+                    </div>
+                    <div class="flex justify-center swiper-slide">
+                        <div>
+                            <video src="./images/video.mp4" class="max-w-[680px]" playsinline autoplay muted
+                                loop></video>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex justify-center gap-2 mt-4 slider-buttons lg:absolute lg:top-[50%] lg:left-[50%] lg:z-50 lg:translate-y-[-50%] lg:translate-x-[-50%] lg:w-[820px] lg:justify-between">
+                    <!-- Previous button -->
+                    <button
+                        class="w-10 h-10 prev bg-[#EDEDED] flex justify-center items-center rounded-full hover:bg-[var(--secondary-hover)] ease-out group disabled:opacity-75 disabled:pointer-events-none lg:right-0">
+
+                        <img src="./images/arrow-right.svg" class="group-hover:invert group-hover:brightness-0" alt="">
+                    </button>
+
+                    <!-- Next button -->
+                    <button
+                        class="w-10 h-10 rotate-180 next bg-[#EDEDED] flex justify-center items-center rounded-full hover:bg-[var(--secondary-hover)] ease-out group disabled:opacity-75 disabled:pointer-events-none lg:absolute lg:left-0">
+
+                        <img src="./images/arrow-right.svg" alt="" class="group-hover:invert group-hover:brightness-0">
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements section -->
+    <section class="section achievements bg-[#FFF8F2]">
+        <div class="gap-4 wrapper lg:flex lg:justify-between">
+
+            <div class="text-center content lg:text-right lg:flex lg:flex-col lg:justify-center lg:basis-3/6">
+
+                <h2 class="title lg:ml-auto lg:mx-0 lg:text-4xl lg:mb-4">
+                    إنجازاتنا
+                    <img src="./images/title.svg" alt="">
+                </h2>
+
+                <p class="mb-6 lg:text-2xl lg:!leading-relaxed">
+                    سعدنا بتقديم الخدمة للمئات من العملاء المميزين, تواصل معنا الان واحصل على خصم 20% بمناسبة إنطلاق
+                    منصتنا الجديدة.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center gap-6 items lg:basis-3/6 lg:flex-grow">
+
+                <div class="flex flex-col gap-6 md:flex-row">
+                    <!-- item -->
+                    <div
+                        class="item bg-white w-[210px] shadow-3xl flex flex-col items-center justify-center gap-2 py-7 px-4 text-center rounded-[20px]">
+                        <img src="./images/achievements/1.svg" class="mb-2" alt="">
+
+                        <h4 class="label text-[22px]">
+                            <span class="count" data-count="650">0</span>
+                            +
+                        </h4>
+
+                        <p class="text-[20px]"> مشروعات مكتملة </p>
+                    </div>
+                    <!-- item -->
+                    <div
+                        class="item bg-white w-[210px] shadow-3xl flex flex-col items-center justify-center gap-2 py-7 px-4 text-center rounded-[20px]">
+
+                        <img src="./images/achievements/2.svg" class="mb-2" alt="">
+
+                        <h4 class="label text-[22px]">
+                            <span class="count" data-count="85">0</span>
+                            +
+                        </h4>
+
+                        <p class="text-[20px]"> إنجازات فعلية </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-6 md:flex-row-reverse md:ml-32">
+                    <!-- item -->
+                    <div
+                        class="item bg-white w-[210px] shadow-3xl flex flex-col items-center justify-center gap-2 py-7 px-4 text-center rounded-[20px]">
+
+                        <img src="./images/achievements/3.svg" class="mb-2" alt="">
+
+                        <h4 class="label text-[22px]">
+                            <span class="count" data-count="450">0</span>
+                            +
+                        </h4>
+
+
+                        <p class="text-[20px]"> عميل مميز </p>
+                    </div>
+                    <!-- item -->
+                    <div
+                        class="item bg-white w-[210px] shadow-3xl flex flex-col items-center justify-center gap-2 py-7 px-4 text-center rounded-[20px]">
+                        <img src="./images/achievements/1.svg" class="mb-2" alt="">
+
+                        <h4 class="label text-[22px]">
+                            <span class="count" data-count="500">0</span>
+                            +
+                        </h4>
+
+
+                        <p class="text-[20px]"> جلسة تصوير </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

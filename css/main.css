@@ -37,6 +37,7 @@
 :root {
   --primary: #005f86;
   --secondary: #ff6b00;
+  --secondary-hover: hsla(25, 100%, 50%, 0.5);
 
   --accent: #323232;
   --accent-dark: #18191f;
@@ -65,7 +66,7 @@ p {
 
 /* Helpers */
 .wrapper {
-  width: 92%;
+  width: 94%;
   max-width: 1240px;
   margin: 0 auto;
 }
@@ -226,4 +227,11 @@ p {
   #how-slider .swiper-slide:nth-child(3n + 3) div {
     margin-right: auto;
   }
+}
+
+/* Achievements */
+.achievements .items .item:nth-child(even) {
+  background-color: #fff1e6;
+  background-image: url("../images/achievements/border.svg");
+  background-position: center;
 }
