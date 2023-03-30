@@ -7,7 +7,7 @@
 
 @layer components {
   .btn {
-    @apply cursor-pointer h-10 ease-in duration-150;
+    @apply h-10 duration-150 ease-in cursor-pointer;
   }
 
   .btn-primary {
@@ -99,6 +99,12 @@ p {
 @media (min-width: 768px) {
   .section {
     padding: 3.5rem 0;
+  }
+}
+
+@media (min-width: 991px) {
+  .section {
+    padding: 4.5rem 0;
   }
 }
 

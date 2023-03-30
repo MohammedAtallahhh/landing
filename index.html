@@ -16,7 +16,7 @@
     <!-- Header -->
     <header class="header wrapper flex justify-between items-center h-[60px] md:h-[72px]">
         <!-- Menu icon -->
-        <button class="menu-icon select-none md:hidden">
+        <button class="select-none menu-icon md:hidden">
             <img src="./images/menu-icon.svg" alt="Menu icon">
         </button>
 
@@ -28,7 +28,7 @@
                 class="close absolute left-[2rem] top-[2rem] text-[1.5rem] text-[#757575] border-[1px] border-[#bbb] w-[4rem] h-[4rem] rounded-full">✕</button>
 
             <!-- Mobile nav list -->
-            <ul class="nav-list text-3xl flex flex-col gap-8 mt-32 mb-16">
+            <ul class="flex flex-col gap-8 mt-32 mb-16 text-3xl nav-list">
                 <!-- Navbar link -->
                 <li class="nav-item">
                     <a href="#" class="nav-link">الرئيسية</a>
@@ -48,24 +48,24 @@
             </ul>
 
             <!-- Mobile nav social links -->
-            <div class="social-links flex items-center gap-6">
-                <a class="youtube w-12 h-12 flex justify-center items-center rounded-full" href="#">
+            <div class="flex items-center gap-6 social-links">
+                <a class="flex items-center justify-center w-12 h-12 rounded-full youtube" href="#">
                     <img class="w-8" src="./images/youtube.svg" alt="">
                 </a>
-                <a class="twitter w-12 h-12 flex justify-center items-center rounded-full" href="#">
+                <a class="flex items-center justify-center w-12 h-12 rounded-full twitter" href="#">
                     <img class="w-8" src="./images/twitter.svg" alt="">
                 </a>
-                <a class="dribble w-12 h-12 flex justify-center items-center rounded-full" href="#">
+                <a class="flex items-center justify-center w-12 h-12 rounded-full dribble" href="#">
                     <img class="w-8" src="./images/dribble.svg" alt="">
                 </a>
-                <a class="instagram w-12 h-12 flex justify-center items-center rounded-full" href="#">
+                <a class="flex items-center justify-center w-12 h-12 rounded-full instagram" href="#">
                     <img class="w-8" src="./images/instagram.svg" alt="">
                 </a>
             </div>
         </nav>
 
         <!-- Navbar -->
-        <nav class="nav hidden md:block">
+        <nav class="hidden nav md:block">
             <ul class="nav-list text-[0.875rem] flex gap-4 lg:gap-8 xl:text-base">
                 <!-- Navbar link -->
                 <li class="nav-item">
@@ -92,7 +92,7 @@
         </a>
 
         <!-- social links -->
-        <div class="social-links items-center gap-3 hidden md:flex">
+        <div class="items-center hidden gap-3 social-links md:flex">
             <!-- Link -->
             <a class="youtube w-8 h-8 flex justify-center items-center bg-[#E7E7E8] rounded-full" href="#">
                 <img class="w-4" src="./images/youtube.svg" alt="">
@@ -116,15 +116,15 @@
     </header>
 
     <!-- Hero section -->
-    <main class="hero md:flex md:flex-row-reverse mb-16">
+    <main class="mb-16 hero md:flex md:flex-row-reverse md:mb-10">
         <!-- Image -->
-        <div class="hero-image -z-10 mb-10 md:mb-0 md:basis-7/12 md:relative left-0">
+        <div class="left-0 mb-10 hero-image -z-10 md:mb-0 md:basis-7/12 md:relative">
             <img class="w-[90%] md:w-[unset] mr-auto" src="./images/hero/banner.png" alt="">
         </div>
 
         <!-- Content -->
         <div
-            class="hero-content text-center flex flex-col gap-8 md:justify-center md:basis-3/6 relative z-10 px-4 md:pl-0 lg:pr-10 xl:pr-20">
+            class="relative z-10 flex flex-col gap-8 px-4 text-center hero-content md:justify-center md:basis-3/6 md:pl-0 lg:pr-10 xl:pr-20">
 
             <!-- title -->
             <h1
@@ -161,37 +161,37 @@
             </p>
 
             <div id="about-us-slider" class="swiper">
-                <div class="swiper-wrapper flex items-center">
+                <div class="flex items-center swiper-wrapper">
                     <!-- Slide -->
-                    <div class="swiper-slide flex items-center justify-center">
+                    <div class="flex items-center justify-center swiper-slide">
                         <img src="./images/about-us/1.png" alt="">
                     </div>
                     <!-- Slide -->
-                    <div class="swiper-slide flex items-center justify-center">
+                    <div class="flex items-center justify-center swiper-slide">
                         <img src="./images/about-us/2.png" alt="">
                     </div>
                     <!-- Slide -->
-                    <div class="swiper-slide flex items-center justify-center">
+                    <div class="flex items-center justify-center swiper-slide">
                         <img src="./images/about-us/3.png" alt="">
                     </div>
                     <!-- Slide -->
-                    <div class="swiper-slide flex items-center justify-center">
+                    <div class="flex items-center justify-center swiper-slide">
                         <img src="./images/about-us/4.png" alt="">
                     </div>
                     <!-- Slide -->
-                    <div class="swiper-slide flex items-center justify-center">
+                    <div class="flex items-center justify-center swiper-slide">
                         <img src="./images/about-us/5.png" alt="">
                     </div>
                     <!-- Slide -->
-                    <div class="swiper-slide flex items-center justify-center">
+                    <div class="flex items-center justify-center swiper-slide">
                         <img src="./images/about-us/6.png" alt="">
                     </div>
                     <!-- Slide -->
-                    <div class="swiper-slide flex items-center justify-center">
+                    <div class="flex items-center justify-center swiper-slide">
                         <img src="./images/about-us/4.png" alt="">
                     </div>
                     <!-- Slide -->
-                    <div class="swiper-slide flex items-center justify-center">
+                    <div class="flex items-center justify-center swiper-slide">
                         <img src="./images/about-us/8.png" alt="">
                     </div>
                 </div>
@@ -199,7 +199,7 @@
                 <div class="about-us-slider-controls slider-controls"></div>
             </div>
 
-            <div class="about-images hidden grid-cols-6">
+            <div class="hidden grid-cols-6 about-images">
 
                 <!-- Slide -->
                 <div class="c-span-2">
@@ -243,16 +243,20 @@
 
     <!-- Why us section -->
     <section class="section why-us">
+        <div class="absolute top-[5%] left-0 hidden line lg:block">
+            <img src="./images/why-us/line.svg" alt="">
+        </div>
+
         <div class="wrapper">
-            <h2 class="title mb-10">
+            <h2 class="mb-10 title">
                 لماذا تختارنا؟
                 <img src="./images/title.svg" alt="">
             </h2>
 
-            <div class="items flex flex-wrap justify-center gap-10 lg:gap-6">
+            <div class="flex flex-wrap justify-center gap-10 items lg:gap-6">
                 <!-- item -->
                 <div
-                    class="item max-w-[290px] flex flex-col items-center justify-center gap-4 py-6 px-4 text-center shadow-3xl rounded-[20px]">
+                    class="item bg-white max-w-[290px] flex flex-col items-center justify-center gap-4 py-6 px-4 text-center shadow-3xl rounded-[20px]">
                     <img src="./images/why-us/1.svg" class="mb-2" alt="">
 
                     <h4 class="label font-bold text-[20px]">أحدث المعدات</h4>
@@ -263,7 +267,7 @@
                 </div>
                 <!-- item -->
                 <div
-                    class="item max-w-[290px] flex flex-col items-center justify-center gap-4 py-6 px-4 text-center shadow-3xl rounded-[20px]">
+                    class="item bg-white max-w-[290px] flex flex-col items-center justify-center gap-4 py-6 px-4 text-center shadow-3xl rounded-[20px]">
                     <img src="./images/why-us/2.svg" class="mb-2" alt="">
 
                     <h4 class="label font-bold text-[20px]">فريق محترف</h4>
@@ -274,7 +278,7 @@
                 </div>
                 <!-- item -->
                 <div
-                    class="item max-w-[290px] flex flex-col items-center justify-center gap-4 py-6 px-4 text-center shadow-3xl rounded-[20px]">
+                    class="item bg-white max-w-[290px] flex flex-col items-center justify-center gap-4 py-6 px-4 text-center shadow-3xl rounded-[20px]">
                     <img src="./images/why-us/3.svg" class="mb-2" alt="">
 
                     <h4 class="label font-bold text-[20px]">خبراء فى التعديل</h4>
@@ -285,7 +289,7 @@
                 </div>
                 <!-- item -->
                 <div
-                    class="item max-w-[290px] flex flex-col items-center justify-center gap-4 py-6 px-4 text-center shadow-3xl rounded-[20px]">
+                    class="item bg-white max-w-[290px] flex flex-col items-center justify-center gap-4 py-6 px-4 text-center shadow-3xl rounded-[20px]">
                     <img src="./images/why-us/4.svg" class="mb-2" alt="">
 
                     <h4 class="label font-bold text-[20px]">أقل سعر</h4>
@@ -301,12 +305,12 @@
     <!-- Services section -->
     <section class="section services bg-[#FFF8F2]">
         <div class="wrapper" style="max-width: 1280px;">
-            <h2 class="title mb-8">
+            <h2 class="mb-8 title">
                 خدماتنا
                 <img src="./images/title.svg" alt="">
             </h2>
 
-            <div class="services-inner flex flex-col-reverse justify-between md:gap-4 lg:gap-8 xl:gap-0 md:flex-row">
+            <div class="flex flex-col-reverse justify-between services-inner md:gap-4 lg:gap-8 xl:gap-0 md:flex-row">
                 <div class="content xl:basis-4/12">
                     <!-- header -->
                     <header class="mb-10">
@@ -320,8 +324,8 @@
 
                     <div class="items">
                         <!-- Item -->
-                        <div class="item flex gap-5 mb-8">
-                            <div class="image flex-shrink-0">
+                        <div class="flex gap-5 mb-8 item">
+                            <div class="flex-shrink-0 image">
                                 <img src="./images/services/1.svg" alt="">
                             </div>
 
@@ -338,8 +342,8 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="item flex gap-5 mb-8">
-                            <div class="image flex-shrink-0">
+                        <div class="flex gap-5 mb-8 item">
+                            <div class="flex-shrink-0 image">
                                 <img src="./images/services/2.svg" alt="">
                             </div>
 
@@ -355,8 +359,8 @@
                             </div>
                         </div>
                         <!-- Item -->
-                        <div class="item flex gap-5 mb-8">
-                            <div class="image flex-shrink-0">
+                        <div class="flex gap-5 mb-8 item">
+                            <div class="flex-shrink-0 image">
                                 <img src="./images/services/3.svg" alt="">
                             </div>
 
@@ -374,7 +378,7 @@
                 </div>
 
                 <div
-                    class="image mb-16 flex justify-center md:justify-end items-center md:basis-3/6 xl:basis-8/12 flex-shrink-0">
+                    class="flex items-center justify-center flex-shrink-0 mb-16 image md:justify-end md:basis-3/6 xl:basis-8/12">
                     <img src="./images/services/banner.png" alt="">
                 </div>
             </div>
@@ -385,20 +389,20 @@
     <!-- How it works section -->
     <section class="section how">
         <div class="wrapper">
-            <h2 class="title mb-8 lg:mb-12">
+            <h2 class="mb-8 title lg:mb-12">
                 كيف تعمل الخدمة
                 <img src="./images/title.svg" alt="">
             </h2>
 
             <div id="how-slider" class="items swiper">
-                <div class="circle absolute right-0 -top-10">
+                <div class="absolute right-0 circle -top-10">
                     <img src="./images/how/circle.svg" alt="">
                 </div>
-                <div class="line absolute right-0 h-full">
+                <div class="absolute right-0 h-full line">
                     <img class="object-cover h-full" src="./images/how/line.svg" alt="">
                 </div>
 
-                <div class="swiper-wrapper mb-10 justify-between">
+                <div class="justify-between mb-10 swiper-wrapper">
                     <!-- item -->
                     <div class="swiper-slide">
                         <div
@@ -449,6 +453,22 @@
                 <div class="how-slider-controls slider-controls"></div>
 
             </div>
+        </div>
+    </section>
+
+    <!-- 3D photograph -->
+    <section class="section 3d">
+        <div class="wrapper">
+            <h2 class="title">
+                خدمة التصوير ثلاثي الأبعاد
+                <img src="./images/title.svg" alt="">
+            </h2>
+
+            <p class="text-center">
+                ديجتال كود مميزة بتقديم خدمة التصوير ثلاثى الأبعاد لمنتجاتك
+                <span class="text-[var(--secondary)]">360ْ </span>, التى تظهر كل تفاصيل منتجك بشكل عصرى وجذاب
+                للعملاء , يمكنك رؤية بعض أعمالنا السابقة هنا.
+            </p>
         </div>
     </section>
 
