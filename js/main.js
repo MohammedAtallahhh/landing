@@ -4,11 +4,11 @@ const closeButton = document.querySelector(".mobile-nav .close");
 const aboutSliderEl = document.querySelector("#about-us-slider");
 
 menuIcon.addEventListener("click", () => {
-  mobileNav.classList.add("translate-x-0");
+  mobileNav.style.transform = "translateX(0)";
 });
 
 closeButton.addEventListener("click", () => {
-  mobileNav.classList.remove("translate-x-0");
+  mobileNav.style.transform = "translateX(100%)";
 });
 
 // Sliders
