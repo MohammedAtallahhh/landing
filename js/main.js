@@ -3,6 +3,7 @@ const mobileNav = document.querySelector(".mobile-nav");
 const closeButton = document.querySelector(".mobile-nav .close");
 const aboutSliderEl = document.querySelector("#about-us-slider");
 const countElements = document.querySelectorAll(".achievements .count");
+const accordion = document.querySelector(".faq .accordion");
 
 menuIcon.addEventListener("click", () => {
   mobileNav.style.transform = "translateX(0)";
@@ -37,6 +38,28 @@ const howSlider = new Swiper("#how-slider", {
   },
 });
 
+const partnersSlider = new Swiper("#partners-slider", {
+  slidesPerView: 2,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+
+    991: {
+      slidesPerView: 4,
+    },
+
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+
+  pagination: {
+    el: ".partners-slider-controls",
+    clickable: true,
+  },
+});
 const threeDSlider = new Swiper("#three-d-slider", {
   autoplay: {
     delay: 8000,
@@ -76,4 +99,17 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 countElements.forEach((countEl) => {
   observer.observe(countEl);
+});
+
+// Accordion
+accordion.addEventListener("click", (e) => {
+  const target = e.target.closest(".accordion .item-btn");
+  if (!target) return;
+
+  const lastActive = accordion.querySelector(".item.active");
+
+  lastActive &&
+    lastActive !== target.parentElement &&
+    lastActive.classList.remove("active");
+  target.parentElement.classList.toggle("active");
 });

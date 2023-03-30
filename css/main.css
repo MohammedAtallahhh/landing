@@ -1,6 +1,7 @@
-/* Cairo font */
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;800;900;1000&display=swap");
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;800;900;1000&family=Inter:wght@100;200;300;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 
+/* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -45,7 +46,7 @@
 }
 
 body {
-  font-family: "Cairo", ui-sans-serif, system-ui, -apple-system,
+  font-family: "Tajawal", ui-sans-serif, system-ui, -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
@@ -78,6 +79,7 @@ p {
 
 .title {
   color: var(--primary);
+  font-family: "Cairo", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
@@ -152,8 +154,13 @@ p {
 
 .social-links a:hover,
 .social-links a:focus {
-  background: #f5f5f5;
+  background: #ffffff;
   transform: scale(1.1);
+}
+
+.social-links .youtube:hover,
+.social-links .youtube:focus {
+  background: #fad0b2;
 }
 
 .social-links .twitter:hover,
@@ -234,4 +241,37 @@ p {
   background-color: #fff1e6;
   background-image: url("../images/achievements/border.svg");
   background-position: center;
+}
+
+/* FAQ */
+.faq .item.active .arrow {
+  transform: rotate(180deg);
+  background: var(--secondary);
+}
+
+.faq .item .arrow::after {
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  top: 0.725rem;
+  transform: translate(-50%, -70%) rotate(45deg);
+  width: 0.45rem;
+  height: 0.45rem;
+
+  border-bottom: 2px solid #777777;
+  border-right: 2px solid #777777;
+}
+
+.faq .item.active .arrow::after {
+  border-color: white;
+}
+
+.accordion .item.active .item-content {
+  max-height: 100vh;
+  padding: 2rem;
+}
+
+/* Ad */
+.ad {
+  background: url("../images/ad/banner.png");
 }
