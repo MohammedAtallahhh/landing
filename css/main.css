@@ -63,15 +63,6 @@ p {
   line-height: 1.8;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--primary);
-}
-
 /* Helpers */
 .wrapper {
   width: 92%;
@@ -215,4 +206,18 @@ h6 {
   }
 }
 
-/* About us */
+/* How it works */
+
+@media (min-width: 992px) {
+  #how-slider .swiper-slide:nth-child(3n + 1) div {
+    margin-left: auto;
+  }
+
+  #how-slider .swiper-slide:nth-child(3n + 2) div {
+    margin-inline: auto;
+  }
+
+  #how-slider .swiper-slide:nth-child(3n + 3) div {
+    margin-right: auto;
+  }
+}

@@ -18,3 +18,20 @@ const aboutSlider = new Swiper("#about-us-slider", {
     clickable: true,
   },
 });
+
+const howSlider = new Swiper("#how-slider", {
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+
+    991: {
+      slidesPerView: 3,
+    },
+  },
+
+  pagination: {
+    el: ".how-slider-controls",
+    clickable: true,
+  },
+});

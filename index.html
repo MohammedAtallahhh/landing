@@ -153,9 +153,9 @@
                 <img src="./images/title.svg" alt="">
             </h2>
 
-            <p class="text-center mb-8">
+            <p class="text-center xl:text-[19px] mb-8">
                 ديجتال كود أفضل منصه عربية لتطوير الأعمال والخدمات, لدينا العديد من الخدمات اللى تهم التاجر وتساعده فى
-                زيادة ارباحه وتطوير اعماله , نحن شركاء التاجر فى النجاح ,
+                زيادة ارباحه وتطوير اعماله , نحن شركاء التاجر فى النجاح
                 نساعد التاجر فى كل ما يخصه فى تطوير عمله وخدمته وإظهارها بشكل أفضل يجذب العملاء إليه عن طريق العديد من
                 الخدمات.
             </p>
@@ -311,7 +311,7 @@
                     <!-- header -->
                     <header class="mb-10">
                         <span class="font-medium">تعرف علينا أكثر</span>
-                        <h4 class="text-[20px] font-bold leading-loose my-1">حيث يحدث الإبداع</h4>
+                        <h4 class="text-[var(--primary)] text-[20px] font-bold leading-loose my-1">حيث يحدث الإبداع</h4>
                         <p>
                             نقدم خدمات مميزة لتطوير الأعمال والخدمات تعرف عليها
                             وإختار ما تحتاجه ليميز منتجاتك ويزيد أرباحك
@@ -379,6 +379,76 @@
                 </div>
             </div>
         </div>
+        </div>
+    </section>
+
+    <!-- How it works section -->
+    <section class="section how">
+        <div class="wrapper">
+            <h2 class="title mb-8 lg:mb-12">
+                كيف تعمل الخدمة
+                <img src="./images/title.svg" alt="">
+            </h2>
+
+            <div id="how-slider" class="items swiper">
+                <div class="circle absolute right-0 -top-10">
+                    <img src="./images/how/circle.svg" alt="">
+                </div>
+                <div class="line absolute right-0 h-full">
+                    <img class="object-cover h-full" src="./images/how/line.svg" alt="">
+                </div>
+
+                <div class="swiper-wrapper mb-10 justify-between">
+                    <!-- item -->
+                    <div class="swiper-slide">
+                        <div
+                            class="max-w-[325px] mx-auto lg:mx-0 flex flex-col items-center justify-center gap-4 text-center">
+                            <img src="./images/how/1.svg" class="mb-2" alt="">
+
+                            <h4 class="label font-bold text-[20px]">
+                                أرسل منتجاتك
+                            </h4>
+
+                            <p class="text-[20px] leading-loose">
+                                أحضر منتجاتك أو أرسلها إلينا ليتم تجهيزها وتصويرها فى استوديو ديجتال
+                                كود المجهز.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- item -->
+                    <div class="swiper-slide">
+                        <div
+                            class="max-w-[325px] mx-auto lg:mx-0 flex flex-col items-center justify-center gap-4 text-center">
+                            <img src="./images/how/2.svg" class="mb-2" alt="">
+
+                            <h4 class="label font-bold text-[20px]">مهمة الخبراء</h4>
+
+                            <p class="text-[20px] leading-loose">
+                                يتم تجهيز منتجاتك وتصويرها على أيدى أفضل الخبراء والمصممين فى مجال تصوير المنتجات.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+
+                    <div class="swiper-slide">
+                        <div
+                            class="max-w-[325px] mx-auto lg:mx-0 flex flex-col items-center justify-center gap-4 text-center">
+
+                            <img src="./images/how/3.svg" class="mb-2" alt="">
+
+                            <h4 class="label font-bold text-[20px]">إستلم صورك</h4>
+
+                            <p class="text-[20px] leading-loose">
+                                بعد التصوير والتعديل علي الصور تستطيع استلامها عن طريق تحميلها بأفضل جودة.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="how-slider-controls slider-controls"></div>
+
+            </div>
         </div>
     </section>
 
