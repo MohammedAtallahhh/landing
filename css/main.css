@@ -65,11 +65,24 @@ p {
   line-height: 1.8;
 }
 
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid var(--secondary);
+}
+
 /* Helpers */
 .wrapper {
   width: 94%;
   max-width: 1240px;
   margin: 0 auto;
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label {
+  transform: translateY(-1.5rem);
+  padding-inline: 0.5rem;
+  color: var(--secondary);
 }
 
 .section {
@@ -119,7 +132,7 @@ p {
 }
 
 .swiper-pagination-bullet {
-  background: #898989;
+  background: #b6b6b6;
   opacity: unset;
   margin: 0 !important;
   width: 0.625rem;
@@ -269,6 +282,7 @@ p {
 .accordion .item.active .item-content {
   max-height: 100vh;
   padding: 2rem;
+  transition: 100ms ease;
 }
 
 /* Ad */
