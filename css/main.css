@@ -71,6 +71,10 @@ textarea:focus {
   border: 1px solid var(--secondary);
 }
 
+section {
+  overflow: hidden;
+}
+
 /* Helpers */
 .wrapper {
   width: 94%;
@@ -87,7 +91,6 @@ textarea:focus {
 
 .section {
   padding: 2rem 0;
-  overflow: hidden;
 }
 
 .title {
@@ -129,6 +132,10 @@ textarea:focus {
   justify-content: center;
   gap: 0.5rem;
   margin-top: 2rem;
+}
+
+.swiper-wrapper {
+  cursor: grabbing;
 }
 
 .swiper-pagination-bullet {

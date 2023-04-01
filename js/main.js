@@ -13,6 +13,49 @@ closeButton.addEventListener("click", () => {
   mobileNav.style.transform = "translateX(100%)";
 });
 
+// Animate count elements on scroll
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const countEl = entry.target;
+      const targetCount = +countEl.getAttribute("data-count");
+      const increment = Math.ceil(targetCount / 100);
+      let currentCount = 0;
+
+      const updateCount = () => {
+        if (currentCount < targetCount) {
+          currentCount += increment;
+          countEl.innerText = currentCount;
+          setTimeout(updateCount, 10);
+        } else {
+          countEl.innerText = targetCount;
+        }
+      };
+
+      updateCount();
+
+      observer.unobserve(countEl);
+    }
+  });
+});
+
+countElements.forEach((countEl) => {
+  observer.observe(countEl);
+});
+
+// Accordion
+accordion.addEventListener("click", (e) => {
+  const target = e.target.closest(".accordion .item-btn");
+  if (!target) return;
+
+  const lastActive = accordion.querySelector(".item.active");
+
+  lastActive &&
+    lastActive !== target.parentElement &&
+    lastActive.classList.remove("active");
+  target.parentElement.classList.toggle("active");
+});
+
 // Sliders
 const aboutSlider = new Swiper("#about-us-slider", {
   pagination: {
@@ -60,6 +103,7 @@ const partnersSlider = new Swiper("#partners-slider", {
     clickable: true,
   },
 });
+
 const threeDSlider = new Swiper("#three-d-slider", {
   autoplay: {
     delay: 8000,
@@ -71,45 +115,9 @@ const threeDSlider = new Swiper("#three-d-slider", {
   },
 });
 
-// Animate count elements on scroll
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      const countEl = entry.target;
-      const targetCount = +countEl.getAttribute("data-count");
-      const increment = Math.ceil(targetCount / 100);
-      let currentCount = 0;
-
-      const updateCount = () => {
-        if (currentCount < targetCount) {
-          currentCount += increment;
-          countEl.innerText = currentCount;
-          setTimeout(updateCount, 10);
-        } else {
-          countEl.innerText = targetCount;
-        }
-      };
-
-      updateCount();
-
-      observer.unobserve(countEl);
-    }
-  });
-});
-
-countElements.forEach((countEl) => {
-  observer.observe(countEl);
-});
-
-// Accordion
-accordion.addEventListener("click", (e) => {
-  const target = e.target.closest(".accordion .item-btn");
-  if (!target) return;
-
-  const lastActive = accordion.querySelector(".item.active");
-
-  lastActive &&
-    lastActive !== target.parentElement &&
-    lastActive.classList.remove("active");
-  target.parentElement.classList.toggle("active");
+const testimonialsSlider = new Swiper("#testimonials-slider", {
+  pagination: {
+    el: ".testimonials-slider-controls",
+    clickable: true,
+  },
 });

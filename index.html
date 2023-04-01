@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/styles.css">
     <title>Landing</title>
@@ -118,17 +120,18 @@
     <!-- Hero section -->
     <main class="mb-16 hero md:flex md:flex-row-reverse md:mb-10">
         <!-- Image -->
-        <div class="left-0 mb-10 hero-image -z-10 md:mb-0 md:basis-7/12 md:relative">
+        <div class="left-0 mb-10 hero-image -z-10 md:mb-0 md:basis-7/12 md:relative" data-aos="fade-zoom-in"
+            data-aos-delay="300">
             <img class="w-[90%] md:w-[unset] mr-auto" src="./images/hero/banner.png" alt="">
         </div>
 
         <!-- Content -->
-        <div
-            class="relative z-10 flex flex-col gap-8 px-4 text-center hero-content md:justify-center md:basis-3/6 md:pl-0 lg:pr-10 xl:pr-20">
+        <div class="relative z-10 flex flex-col gap-8 px-4 text-center hero-content md:justify-center md:basis-3/6 md:pl-0 lg:pr-10 xl:pr-20"
+            data-aos="fade-up">
 
             <!-- title -->
             <h1
-                class="text-2xl md:text-3xl text-[var(--primary)] lg:text-4xl xl:text-5xl font-semibold whitespace-nowrap">
+                class="text-2xl md:text-3xl text-[var(--primary)] lg:text-4xl xl:text-5xl font-semibold md:whitespace-nowrap">
                 تصوير
                 منتجات <span class="text-[var(--secondary)]">الذهب</span>
                 بإحترافية
@@ -474,13 +477,13 @@
                 <div class="swiper-wrapper">
                     <div class="flex justify-center swiper-slide">
                         <div>
-                            <video src="./images/video.mp4" class="max-w-[680px]" playsinline autoplay muted
+                            <video src="./images/video.mp4" class="max-w-[680px] w-full" playsinline autoplay muted
                                 loop></video>
                         </div>
                     </div>
                     <div class="flex justify-center swiper-slide">
                         <div>
-                            <video src="./images/video.mp4" class="max-w-[680px]" playsinline autoplay muted
+                            <video src="./images/video.mp4" class="max-w-[680px] w-full" playsinline autoplay muted
                                 loop></video>
                         </div>
                     </div>
@@ -588,17 +591,84 @@
     </section>
 
     <!-- Testimonials section -->
-    <section class="testimonials">
-        <div class="wrapper" style="max-width: 1100px;">
-            <h2 class="title">
-                اّراء العملاء
-                <img src="./images/" alt="">
-            </h2>
+    <section class="py-16 lg:pb-32 testimonials">
+        <h2 class="title">
+            اّراء العملاء
+            <img src="./images/title.svg" alt="">
+        </h2>
 
-            <p>
-                نشارككم بعض من اراء عملائنا المميزيون , بعد ان استفادو
-                من عروضنا وخدماتنا وتطورت أعمالهم
-            </p>
+        <p class="text-center lg:text-lg mb-[16rem] lg:mb-[11rem]">
+            نشارككم بعض من اراء عملائنا المميزيون , بعد ان استفادو
+            من عروضنا وخدماتنا وتطورت أعمالهم
+        </p>
+
+        <div id="testimonials-slider" class="swiper items bg-[#005f86b3] !overflow-visible">
+
+            <div class="swiper-wrapper">
+                <div class="item swiper-slide">
+                    <div class="item-inner wrapper" style="max-width: 1100px; width: 90%;">
+                        <div
+                            class="absolute left-[50%] top-0 image max-w-[350px] lg:max-w-[515px] mx-auto flex justify-center items-center translate-y-[-50%] translate-x-[-50%] w-full lg:top-[50%] lg:left-0 lg:translate-x-0 lg:w-[50%]">
+
+                            <img src="./images/testimonials/1.png" alt="" class="object-cover w-full h-full">
+
+                            <img src="./images/testimonials/border.png" alt="" class="absolute inset-0 scale-[1.15]">
+                        </div>
+
+                        <div class="p-8 pt-[14rem] lg:p-16 lg:pr-0 content lg:w-[45%]">
+                            <h4 class="text-[var(--secondary)] font-bold text-xl mb-3 lg:text-2xl">اّدم شادي</h4>
+
+                            <p class="text-[#FF8A36] text-lg mb-4 lg:text-xl">تاجر</p>
+
+                            <p class="pr-10 text-white lg:text-lg lg:leading-loose">
+                                سعيد جدا بالعمل معكم , فريق عمل ممتاز وتم
+                                تصوير منتجاتى بالطريقة التى أردتها وأذهلتنى
+                                أكتر مما كنت اتوقع , شكرا لكم , لن تكون المرة
+                                الأخيره.
+
+                                <img src="./images/testimonials/quotes-right.svg" alt=""
+                                    class="absolute top-0 right-0 opacity-40">
+
+                                <img src="./images/testimonials/quotes-left.svg" alt=""
+                                    class="absolute bottom-0 left-0 opacity-40">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item swiper-slide">
+                    <div class="item-inner wrapper" style="max-width: 1100px; width: 90%;">
+                        <div
+                            class="absolute left-[50%] top-0 image max-w-[350px] lg:max-w-[515px] mx-auto flex justify-center items-center translate-y-[-50%] translate-x-[-50%] w-full lg:top-[50%] lg:left-0 lg:translate-x-0 lg:w-[50%]">
+
+                            <img src="./images/testimonials/1.png" alt="" class="object-cover w-full h-full">
+
+                            <img src="./images/testimonials/border.png" alt="" class="absolute inset-0 scale-[1.15]">
+                        </div>
+
+                        <div class="p-8 pt-[14rem] lg:p-16 lg:pr-0 content lg:w-[45%]">
+                            <h4 class="text-[var(--secondary)] font-bold text-xl mb-3 lg:text-2xl">اّدم شادي</h4>
+
+                            <p class="text-[#FF8A36] text-lg mb-4 lg:text-xl">تاجر</p>
+
+                            <p class="pr-10 text-white lg:text-lg lg:leading-loose">
+                                سعيد جدا بالعمل معكم , فريق عمل ممتاز وتم
+                                تصوير منتجاتى بالطريقة التى أردتها وأذهلتنى
+                                أكتر مما كنت اتوقع , شكرا لكم , لن تكون المرة
+                                الأخيره.
+
+                                <img src="./images/testimonials/quotes-right.svg" alt=""
+                                    class="absolute top-0 right-0 opacity-40">
+
+                                <img src="./images/testimonials/quotes-left.svg" alt=""
+                                    class="absolute bottom-0 left-0 opacity-40">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="z-20 testimonials-slider-controls slider-controls"></div>
         </div>
     </section>
 
@@ -932,6 +1002,11 @@
     </section>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="js/main.js"></script>
 </body>
 
