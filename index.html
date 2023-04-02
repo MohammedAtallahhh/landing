@@ -142,7 +142,7 @@
                 فقط أرسل لنا منتجاتك لنصورها بأحدث الطرق والمعدات
                 وبأيدى أفضل الخبراء فى مجال تصوير المنتجات.</p>
 
-            <div class="">
+            <div>
                 <button class="btn btn-primary lg:text-lg w-[200px] lg:w-[240px]">تواصل معنا الان</button>
             </div>
         </div>
@@ -163,46 +163,46 @@
                 الخدمات.
             </p>
 
-            <div id="about-us-slider" class="swiper">
+            <div id="about-us-slider" class="swiper md:hidden">
                 <div class="flex items-center swiper-wrapper">
                     <!-- Slide -->
                     <div class="flex items-center justify-center swiper-slide">
-                        <img src="./images/about-us/1.png" alt="">
+                        <img src="./images/about-us/1.png" alt="" class="object-cover h-40 rounded-md">
                     </div>
                     <!-- Slide -->
                     <div class="flex items-center justify-center swiper-slide">
-                        <img src="./images/about-us/2.png" alt="">
+                        <img src="./images/about-us/2.png" alt="" class="object-cover h-40 rounded-md">
                     </div>
                     <!-- Slide -->
                     <div class="flex items-center justify-center swiper-slide">
-                        <img src="./images/about-us/3.png" alt="">
+                        <img src="./images/about-us/3.png" alt="" class="object-cover h-40 rounded-md">
                     </div>
                     <!-- Slide -->
                     <div class="flex items-center justify-center swiper-slide">
-                        <img src="./images/about-us/4.png" alt="">
+                        <img src="./images/about-us/4.png" alt="" class="object-cover h-40 rounded-md">
                     </div>
                     <!-- Slide -->
                     <div class="flex items-center justify-center swiper-slide">
-                        <img src="./images/about-us/5.png" alt="">
+                        <img src="./images/about-us/5.png" alt="" class="object-cover h-40 rounded-md">
                     </div>
                     <!-- Slide -->
                     <div class="flex items-center justify-center swiper-slide">
-                        <img src="./images/about-us/6.png" alt="">
+                        <img src="./images/about-us/6.png" alt="" class="object-cover h-40 rounded-md">
                     </div>
                     <!-- Slide -->
                     <div class="flex items-center justify-center swiper-slide">
-                        <img src="./images/about-us/4.png" alt="">
+                        <img src="./images/about-us/4.png" alt="" class="object-cover h-40 rounded-md">
                     </div>
                     <!-- Slide -->
                     <div class="flex items-center justify-center swiper-slide">
-                        <img src="./images/about-us/8.png" alt="">
+                        <img src="./images/about-us/8.png" alt="" class="object-cover h-40 rounded-md">
                     </div>
                 </div>
 
                 <div class="about-us-slider-controls slider-controls"></div>
             </div>
 
-            <div class="hidden grid-cols-6 about-images">
+            <div class="hidden grid-cols-6 about-images md:grid">
 
                 <!-- Slide -->
                 <div class="c-span-2">
@@ -259,7 +259,7 @@
             <div class="flex flex-wrap justify-center gap-10 items lg:gap-6">
                 <!-- item -->
                 <div
-                    class="item bg-white max-w-[290px] flex flex-col items-center justify-center gap-4 py-6 px-4 text-center shadow-3xl rounded-[20px]">
+                    class="item bg-white xl:w-[23%] max-w-[290px] flex flex-col items-center justify-center gap-4 py-6 px-4 text-center shadow-3xl rounded-[20px]">
                     <img src="./images/why-us/1.svg" class="mb-2" alt="">
 
                     <h4 class="label font-bold text-[20px]">أحدث المعدات</h4>
@@ -270,7 +270,7 @@
                 </div>
                 <!-- item -->
                 <div
-                    class="item bg-white max-w-[290px] flex flex-col items-center justify-center gap-4 py-6 px-4 text-center shadow-3xl rounded-[20px]">
+                    class="item bg-white xl:w-[23%] max-w-[290px] flex flex-col items-center justify-center gap-4 py-6 px-4 text-center shadow-3xl rounded-[20px]">
                     <img src="./images/why-us/2.svg" class="mb-2" alt="">
 
                     <h4 class="label font-bold text-[20px]">فريق محترف</h4>
@@ -281,7 +281,7 @@
                 </div>
                 <!-- item -->
                 <div
-                    class="item bg-white max-w-[290px] flex flex-col items-center justify-center gap-4 py-6 px-4 text-center shadow-3xl rounded-[20px]">
+                    class="item bg-white xl:w-[23%] max-w-[290px] flex flex-col items-center justify-center gap-4 py-6 px-4 text-center shadow-3xl rounded-[20px]">
                     <img src="./images/why-us/3.svg" class="mb-2" alt="">
 
                     <h4 class="label font-bold text-[20px]">خبراء فى التعديل</h4>
@@ -292,7 +292,7 @@
                 </div>
                 <!-- item -->
                 <div
-                    class="item bg-white max-w-[290px] flex flex-col items-center justify-center gap-4 py-6 px-4 text-center shadow-3xl rounded-[20px]">
+                    class="item bg-white xl:w-[23%] max-w-[290px] flex flex-col items-center justify-center gap-4 py-6 px-4 text-center shadow-3xl rounded-[20px]">
                     <img src="./images/why-us/4.svg" class="mb-2" alt="">
 
                     <h4 class="label font-bold text-[20px]">أقل سعر</h4>
@@ -591,7 +591,7 @@
     </section>
 
     <!-- Testimonials section -->
-    <section class="py-16 lg:pb-32 testimonials">
+    <section class="py-16 lg:pb-24 testimonials">
         <h2 class="title">
             اّراء العملاء
             <img src="./images/title.svg" alt="">
@@ -605,17 +605,31 @@
         <div id="testimonials-slider" class="swiper items bg-[#005f86b3] !overflow-visible">
 
             <div class="swiper-wrapper">
+                <!-- Slide -->
                 <div class="item swiper-slide">
                     <div class="item-inner wrapper" style="max-width: 1100px; width: 90%;">
+                        <!-- Image -->
                         <div
                             class="absolute left-[50%] top-0 image max-w-[350px] lg:max-w-[515px] mx-auto flex justify-center items-center translate-y-[-50%] translate-x-[-50%] w-full lg:top-[50%] lg:left-0 lg:translate-x-0 lg:w-[50%]">
 
                             <img src="./images/testimonials/1.png" alt="" class="object-cover w-full h-full">
 
-                            <img src="./images/testimonials/border.png" alt="" class="absolute inset-0 scale-[1.15]">
+                            <div class="image-border absolute inset-0 scale-[1.15]">
+                                <img src="./images/testimonials/border.png" alt="">
+
+                                <h6
+                                    class="absolute text-xs font-bold text-[var(--primary)] left-[70%] top-0 lg:text-base lg:top-[-2%]">
+                                    اّدم شادي
+                                </h6>
+                                <h6
+                                    class="absolute text-xs font-bold text-[var(--primary)] left-[70%] top-[95%] lg:top-[93%] lg:text-base">
+                                    اّدم شادي
+                                </h6>
+                            </div>
                         </div>
 
-                        <div class="p-8 pt-[14rem] lg:p-16 lg:pr-0 content lg:w-[45%]">
+                        <!-- Content -->
+                        <div class="p-8 pt-[14rem] lg:p-16 lg:px-0 content lg:w-[36%]">
                             <h4 class="text-[var(--secondary)] font-bold text-xl mb-3 lg:text-2xl">اّدم شادي</h4>
 
                             <p class="text-[#FF8A36] text-lg mb-4 lg:text-xl">تاجر</p>
@@ -636,16 +650,30 @@
                     </div>
                 </div>
 
+                <!-- Slide -->
                 <div class="item swiper-slide">
                     <div class="item-inner wrapper" style="max-width: 1100px; width: 90%;">
+                        <!-- Image -->
                         <div
                             class="absolute left-[50%] top-0 image max-w-[350px] lg:max-w-[515px] mx-auto flex justify-center items-center translate-y-[-50%] translate-x-[-50%] w-full lg:top-[50%] lg:left-0 lg:translate-x-0 lg:w-[50%]">
 
                             <img src="./images/testimonials/1.png" alt="" class="object-cover w-full h-full">
 
-                            <img src="./images/testimonials/border.png" alt="" class="absolute inset-0 scale-[1.15]">
+                            <div class="image-border absolute inset-0 scale-[1.15]">
+                                <img src="./images/testimonials/border.png" alt="">
+
+                                <h6
+                                    class="absolute text-xs font-bold text-[var(--primary)] left-[70%] top-0 lg:text-base lg:top-[-2%]">
+                                    اّدم شادي
+                                </h6>
+                                <h6
+                                    class="absolute text-xs font-bold text-[var(--primary)] left-[70%] top-[95%] lg:top-[93%] lg:text-base">
+                                    اّدم شادي
+                                </h6>
+                            </div>
                         </div>
 
+                        <!-- Content -->
                         <div class="p-8 pt-[14rem] lg:p-16 lg:pr-0 content lg:w-[45%]">
                             <h4 class="text-[var(--secondary)] font-bold text-xl mb-3 lg:text-2xl">اّدم شادي</h4>
 
@@ -668,12 +696,12 @@
                 </div>
             </div>
 
-            <div class="z-20 testimonials-slider-controls slider-controls"></div>
+            <div class="absolute z-20 testimonials-slider-controls slider-controls"></div>
         </div>
     </section>
 
     <!-- Partners section -->
-    <section class="partners section">
+    <section class="py-8 partners">
         <div class="wrapper" style="max-width: 1100px;">
             <h2 class="title">
                 شركاؤنا
@@ -736,7 +764,7 @@
     </section>
 
     <!-- FAQ section -->
-    <section class="pt-4 pb-16 lg:pb-24 faq">
+    <section class="pt-12 pb-16 lg:pb-24 faq">
 
         <div
             class="flex flex-col-reverse gap-20 xl:gap-24 wrapper lg:flex-row lg:items-center lg:justify-between !max-w-[600px] lg:!max-w-[unset]">
@@ -886,7 +914,7 @@
     </section>
 
     <!-- Contact section -->
-    <section class="py-16 contact">
+    <section class="py-16 xl:pb-24 contact">
         <div
             class="flex flex-col justify-center lg:justify-between lg:items-start lg:flex-row gap-14 lg:gap-10 wrapper max-lg:!max-w-[600px] !mb-12">
 
@@ -924,7 +952,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col gap-8 info lg:w-[30%]">
+            <div class="flex flex-col gap-8 info lg:w-[30%] lg:mt-[50px]">
                 <div class="flex items-center gap-6 item">
                     <div class="image">
                         <img src="./images/contact/location.svg" alt="">
@@ -960,30 +988,26 @@
                 </div>
             </div>
 
-            <form class="flex flex-col w-full gap-4 mx-auto form lg:w-[30%]">
+            <form class="flex flex-col w-full gap-4 mx-auto form lg:w-[30%] lg:mt-[50px]">
                 <div class="relative form-group">
-                    <input id="name" type="text" class="border border-[#C4C4C4] py-3 px-5 rounded w-full">
+                    <input id="name" type="text" class="input">
 
-                    <label for="name"
-                        class="absolute text-[#C4C4C4] duration-100 ease-in bg-white pointer-events-none top-3 right-5">أدخل
+                    <label for="name" class="label">أدخل
                         الأسم</label>
                 </div>
 
                 <div class="relative form-group">
-                    <input id="email" type="email" class="border border-[#C4C4C4] py-3 px-5 rounded w-full">
+                    <input id="email" type="email" class="input">
 
-                    <label for="email"
-                        class="absolute text-[#C4C4C4] duration-100 ease-in bg-white pointer-events-none top-3 right-5">أدخل
+                    <label for="email" class="label">أدخل
                         البريد الإلكترونى</label>
                 </div>
 
                 <div class="relative form-group">
-                    <textarea id="message" rows="6" type="email"
-                        class="border border-[#C4C4C4] py-3 px-5 rounded w-full resize-y">
+                    <textarea id="message" rows="6" type="email" class="input">
                     </textarea>
 
-                    <label for="message"
-                        class="absolute text-[#C4C4C4] duration-100 ease-in bg-white pointer-events-none top-3 right-5">أدخل
+                    <label for="message" class="label">أدخل
                         الرسالة</label>
                 </div>
 
@@ -1000,6 +1024,130 @@
         </div>
 
     </section>
+
+    <!-- Footer -->
+    <footer class="pt-16 bg-[#FFF8F2] rounded-l-[20px] rounded-r-[20px]">
+
+        <div
+            class="footer-logo w-[100px] sm:w-[150px] lg:w-[200px] after:rounded-l-[30px] after:rounded-r-[30px] absolute top-0 left-[50%] translate-x-[-50%] after:inset-[-15%] after:bg-red after:absolute after:top-[-40%] after:bg-[#FFF8F2] after:-z-10">
+            <img src="./images/logo.svg" alt="" class="w-full">
+        </div>
+
+        <div class="flex flex-col gap-16 wrapper max-lg:!max-w-[500px] lg:flex-row lg:gap-4 lg:justify-between !mb-12">
+
+            <div
+                class="text lg:order-2 lg:w-[45%] lg:border-x lg:border-[#C4C4C4] lg:px-4 xl:px-8 lg:flex lg:flex-col lg:justify-center">
+
+                <p class="mb-8 text-center">
+                    ديجيتال كود هيا أفضل منصة عربية لخدمات تطوير الأعمال, أعمالنا تشمل تحليل موقعك وبناء أفضل الخطط
+                    التسويقية لزيادة ارباحك وتنمية أعمالك وحل مشكلات
+                    التسويق والمبيعات.
+                </p>
+
+                <div class="flex items-center justify-between links">
+                    <a href="#" class="flex items-center gap-1 hover:text-[var(--secondary)] ease-in duration-150">
+                        <img src="./images/footer/language.svg" alt="">
+                        منصة جولد بوليفارد
+                    </a>
+                    <a href="#" class="flex items-center gap-1 hover:text-[var(--secondary)] ease-in duration-150">
+                        <img src="./images/footer/link.svg" alt="">
+                        خدماتنا
+                    </a>
+                    <a href="#" class="flex items-center gap-1 hover:text-[var(--secondary)] ease-in duration-150">
+                        <img src="./images/footer/whatsapp.svg" alt="">
+                        خدمة الواتساب
+                    </a>
+                </div>
+            </div>
+
+            <div class="newsletter lg:w-[27%] lg:order-1">
+                <h2 class="title">
+                    قائمتنا البريدية
+                    <img src="./images/title.svg" alt="">
+                </h2>
+
+                <p class="mb-4 text-center">
+                    اشترك فى قائمتنا البريدية ليصلك كل جديدنا
+                    وعروضنا وخدماتنا.
+                </p>
+
+                <form class="max-w-[350px] mx-auto">
+                    <div class="form-group mb-9">
+                        <input id="email" type="text" class="input">
+                        <label for="email">أدخل بريدك الإلكتروني</label>
+                    </div>
+
+                    <div class="flex justify-center">
+
+                        <button class="btn btn-primary w-[230px]">إشترك الان!</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="photos lg:w-[27%] lg:order-3">
+                <h2 class="mb-8 title">
+                    ألبوم الصور
+                    <img src="./images/title.svg" alt="">
+                </h2>
+
+                <div class="grid grid-cols-3 items w-[fit-content] mx-auto gap-2">
+                    <img src="./images/footer/photos-1.png" alt="">
+                    <img src="./images/footer/photos-2.png" alt="">
+                    <img src="./images/footer/photos-3.png" alt="">
+                    <img src="./images/footer/photos-4.png" alt="">
+                    <img src="./images/footer/photos-5.png" alt="">
+                    <img src="./images/footer/photos-6.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- The footer of the footer -->
+        <footer class="bg-[url('../images/footer/bg.png')] py-6">
+
+            <div class="flex flex-col justify-center gap-4 wrapper lg:flex-row lg:justify-between">
+
+                <div class="flex flex-wrap justify-center text-lg text-center text lg:flex-nowrap lg:justify-start">
+
+                    <p class="flex items-center w-full md:w-[unset] text-white justify-center">
+                        جميع الحقوق محفوظة <img src="./images/footer/copyright.svg" alt="" class="mx-1"> 2022 لشركة
+                        ديجيتال كود
+                    </p>
+
+                    <p class="text-white border-l border-[#EEEEEE] px-4 ml-4 md:border-r md:mr-4">
+                        الشروط والأحكام
+                    </p>
+
+                    <p class="text-white">
+                        سياسة الخصوصية
+                    </p>
+                </div>
+
+
+                <div class="flex items-center justify-center gap-3 social-links">
+                    <!-- Link -->
+                    <a class="youtube w-8 h-8 flex justify-center items-center bg-[#ffffff1a] rounded-full hover:!bg-[#FE0000]"
+                        href="#">
+                        <img class="w-4 invert brightness-0" src="./images/youtube.svg" alt="">
+                    </a>
+
+                    <!-- Link -->
+                    <a class="twitter w-8 h-8 flex justify-center items-center bg-[#ffffff1a] rounded-full" href="#">
+                        <img class="w-4 invert brightness-0" src="./images/twitter.svg" alt="">
+                    </a>
+
+                    <!-- Link -->
+                    <a class="dribble w-8 h-8 flex justify-center items-center bg-[#ffffff1a] rounded-full" href="#">
+                        <img class="w-4 invert brightness-0" src="./images/dribble.svg" alt="">
+                    </a>
+
+                    <!-- Link -->
+                    <a class="instagram w-8 h-8 flex justify-center items-center bg-[#ffffff1a] rounded-full" href="#">
+                        <img class="w-4 invert brightness-0" src="./images/instagram.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </footer>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 

@@ -58,6 +58,16 @@ accordion.addEventListener("click", (e) => {
 
 // Sliders
 const aboutSlider = new Swiper("#about-us-slider", {
+  spaceBetween: 20,
+  breakpoints: {
+    400: {
+      slidesPerView: 2,
+    },
+    550: {
+      slidesPerView: 3,
+    },
+  },
+
   pagination: {
     el: ".about-us-slider-controls",
     clickable: true,

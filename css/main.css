@@ -12,7 +12,7 @@
   }
 
   .btn-primary {
-    @apply bg-[#FF6B00] text-white rounded-md;
+    @apply bg-[#FF6B00] text-white rounded-md font-medium;
   }
 
   .btn-primary:hover {
@@ -23,6 +23,20 @@
 @layer utilities {
   .c-span-2 {
     grid-column: span 2;
+  }
+
+  .input {
+    @apply border border-[#C4C4C4] py-2 px-5 rounded w-full;
+  }
+
+  .input + label {
+    @apply absolute text-[#C4C4C4] duration-100 ease-in bg-white pointer-events-none top-2 right-5;
+  }
+
+  .input:focus + label {
+    color: var(--secondary);
+
+    @apply px-2 -translate-y-5;
   }
 }
 
@@ -80,13 +94,6 @@ section {
   width: 94%;
   max-width: 1240px;
   margin: 0 auto;
-}
-
-.form-group input:focus + label,
-.form-group textarea:focus + label {
-  transform: translateY(-1.5rem);
-  padding-inline: 0.5rem;
-  color: var(--secondary);
 }
 
 .section {
@@ -155,7 +162,7 @@ section {
 /* Header */
 .nav-link {
   color: var(--accent-dark);
-  transition: 150ms ease-in-out;
+  transition: 150ms ease-in;
 }
 
 .nav-link:hover,
@@ -170,6 +177,10 @@ section {
   .nav-link.active {
     padding-right: 1rem;
   }
+}
+
+.social-links a {
+  transition: 150ms ease;
 }
 
 .social-links a:hover,
