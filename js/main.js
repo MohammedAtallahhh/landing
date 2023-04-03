@@ -14,30 +14,33 @@ closeButton.addEventListener("click", () => {
 });
 
 // Animate count elements on scroll
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      const countEl = entry.target;
-      const targetCount = +countEl.getAttribute("data-count");
-      const increment = Math.ceil(targetCount / 100);
-      let currentCount = 0;
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const countEl = entry.target;
+        const targetCount = +countEl.getAttribute("data-count");
+        const increment = Math.ceil(targetCount / 100);
+        let currentCount = 0;
 
-      const updateCount = () => {
-        if (currentCount < targetCount) {
-          currentCount += increment;
-          countEl.innerText = currentCount;
-          setTimeout(updateCount, 10);
-        } else {
-          countEl.innerText = targetCount;
-        }
-      };
+        const updateCount = () => {
+          if (currentCount < targetCount) {
+            currentCount += increment;
+            countEl.innerText = currentCount;
+            setTimeout(updateCount, 10);
+          } else {
+            countEl.innerText = targetCount;
+          }
+        };
 
-      updateCount();
+        updateCount();
 
-      observer.unobserve(countEl);
-    }
-  });
-});
+        observer.unobserve(countEl);
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
 
 countElements.forEach((countEl) => {
   observer.observe(countEl);
