@@ -49,13 +49,16 @@ countElements.forEach((countEl) => {
 // Accordion
 accordion.addEventListener("click", (e) => {
   const target = e.target.closest(".accordion .item-btn");
-  if (!target) return;
+  if (!target) {
+    return;
+  }
 
   const lastActive = accordion.querySelector(".item.active");
 
-  lastActive &&
-    lastActive !== target.parentElement &&
+  if (lastActive && lastActive !== target.parentElement) {
     lastActive.classList.remove("active");
+  }
+
   target.parentElement.classList.toggle("active");
 });
 
