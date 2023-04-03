@@ -120,6 +120,8 @@ section {
 
 .title + p {
   margin-top: 1rem;
+  max-width: 110ch;
+  margin-inline: auto;
 }
 
 @media (min-width: 768px) {
@@ -265,6 +267,16 @@ section {
   #how-slider .swiper-slide:nth-child(3n + 3) div {
     margin-right: auto;
   }
+}
+
+/* Work */
+.work .tabs button:hover {
+  background: #ffe2ce;
+}
+
+.work .tabs button.active {
+  background: var(--secondary);
+  color: white;
 }
 
 /* Achievements */

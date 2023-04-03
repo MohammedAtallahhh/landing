@@ -63,7 +63,8 @@ const aboutSlider = new Swiper("#about-us-slider", {
     400: {
       slidesPerView: 2,
     },
-    550: {
+
+    768: {
       slidesPerView: 3,
     },
   },
